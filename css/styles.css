@@ -14,7 +14,7 @@
   .variable-words-wrap {
     position: relative;
     width: 500px;
-    height: 88px;
+    height: 80px;
     overflow: hidden;
     text-align: left;
   }
@@ -23,8 +23,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 5rem;
-    line-height: 1.1;
+    font-size: 80px;
+    line-height: 1;
     font-weight: 400;
     letter-spacing: 0%;
   }
@@ -44,11 +44,11 @@
   /* Gradient Button Styling */
   .button-wrapper-gradient {
     display: inline-block;
-    padding: 3px;
+    padding: 2.5px;
     background: linear-gradient(45deg, #c5d7f5, #d6e5f9, #e7f3fc, #b4c6eb, #8f9fe3, #6d87c9, #4a66b0);
     background-size: 200% 200%;
     border-radius: 50px;
-    transition: background 0.4s ease-in-out;
+    transition: background 2.5s ease-in-out;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
