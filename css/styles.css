@@ -76,8 +76,8 @@
   .contact-form-input.is-select,
   textarea.contact-form-input {
     color: black !important;
-    background-color: #fff !important;
-    border: 1px solid var(--blue-outline) !important;
+    background-color: var(--bg-blur-color) !important;
+    border: 1px solid var(--blue-outline-light) !important;
     font-size: 1rem !important;
     font-weight: 600 !important;
     line-height: 1.5 !important;
@@ -106,7 +106,7 @@
   /* Dropdown Options */
   .contact-form-input.is-select option {
     color: black !important;
-    background: white !important;
+    background: var(--bg-blur-color) !important;
     font-size: 1rem;
   }
 
@@ -114,7 +114,7 @@
   .contact-form-input:focus,
   .contact-form-input.is-select:focus,
   textarea.contact-form-input:focus {
-    border: 1px solid var(--blue-outline) !important;
+    border: 1px solid transparent !important;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2) !important;
     outline: none !important;
   }
@@ -128,9 +128,9 @@
     width: 1.25rem;
     height: 1.25rem;
     margin: 0;
-    border: 1px solid var(--blue-outline);
+    border: 1px solid var(--blue-outline-light) !important;
     border-radius: var(--corner-img);
-    background-color: #fff;
+    background-color: var(--bg-blur-color) !important;
     transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
     cursor: pointer;
     position: relative;
@@ -139,7 +139,7 @@
   input[type="checkbox"].form_checkbox-icon-style:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2);
-    border: 1px solid var(--blue-outline);
+    border: 1px solid transparent !important;
   }
 
   input[type="checkbox"].form_checkbox-icon-style:checked {
