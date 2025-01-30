@@ -159,8 +159,16 @@
   }
 
 /* Media Queries */
-  @media screen and (max-width: 767px) and (min-width: 600px),
-         screen and (max-width: 599px) and (min-width: 479px) {
+@media screen and (max-width: 599px) and (min-width: 479px) {
+  .help_card {
+      display: grid !important; /* Enables Grid Layout */
+      grid-template-columns: 1fr !important; /* 1 Column */
+      grid-template-rows: repeat(2, auto) !important; /* 2 Rows, auto height */
+      gap: 32px !important; /* Optional: Adds spacing between rows */
+  }
+}  
+
+@media screen and (max-width: 767px) and (min-width: 600px) {
     .variable-words-wrap {
       width: 400px;
       height: 48px;
