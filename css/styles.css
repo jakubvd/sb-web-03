@@ -77,7 +77,7 @@
   textarea.contact-form-input {
     color: black !important;
     background-color: var(--bg-blur-color) !important;
-    border: 1px solid var(--blue-outline-light) !important;
+    border: 1px solid var(--blue-outline-light-2) !important;
     font-size: 1rem !important;
     font-weight: 600 !important;
     line-height: 1.5 !important;
