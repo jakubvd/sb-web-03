@@ -77,14 +77,14 @@
   textarea.contact-form-input {
     color: black !important;
     background-color: var(--bg-blur-color) !important;
-    border: 1px solid var(--blue-outline-light-2) !important;
+    border: 0.5px solid var(--blue-outline-light-2) !important;
     font-size: 1rem !important;
     font-weight: 600 !important;
     line-height: 1.5 !important;
     letter-spacing: 0 !important;
     padding: 0.75rem 1rem !important;
     border-radius: var(--corner-img) !important;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.5s ease-in-out !important; 
     outline: none !important;
     vertical-align: middle !important;
     display: inline-flex !important;
@@ -115,7 +115,7 @@
   .contact-form-input.is-select:hover,
   textarea.contact-form-input:hover {
     background: var(--bg-blur-color-light) !important;
-    border: 1px solid var(--bg-blur-color) !important;
+    border: 0.5px solid var(--bg-blur-color) !important;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2) !important;
     outline: none !important;
   }
@@ -124,7 +124,7 @@
   .contact-form-input:focus,
   .contact-form-input.is-select:focus,
   textarea.contact-form-input:focus {
-    border: 1px solid var(--blue-outline-light) !important;
+    border: 0.5px solid var(--blue-outline-light-2) !important;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2) !important;
     outline: none !important;
   }
@@ -138,10 +138,10 @@
     width: 1.25rem;
     height: 1.25rem;
     margin: 0;
-    border: 1px solid var(--blue-outline-light) !important;
+    border: 0.5px solid var(--blue-outline-light-2) !important;
     border-radius: var(--corner-img);
     background-color: var(--bg-blur-color) !important;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    transition: all 0.5s ease-in-out !important;
     cursor: pointer;
     position: relative;
   }
@@ -149,7 +149,7 @@
   input[type="checkbox"].form_checkbox-icon-style:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2);
-    border: 1px solid transparent !important;
+    border: 0.5px solid var(--blue-outline-light-2) !important;
   }
 
   input[type="checkbox"].form_checkbox-icon-style:checked {
@@ -158,11 +158,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%; /* Adjust for proper icon size */
-    border: 1px solid var(--blue-outline);
+    border: 0.5px solid var(--bg-blur-color) !importantimportant;
   }
 
   input[type="checkbox"].form_checkbox-icon-style:hover {
-    border-color: rgba(0, 0, 255, 0.8);
+    border-color: rgba(242, 5, 195, 0.8);
     box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.1);
   }
 
