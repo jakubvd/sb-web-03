@@ -111,6 +111,16 @@
   }
 
   /* Focus States */
+  .contact-form-input:hover,
+  .contact-form-input.is-select:hover,
+  textarea.contact-form-input:hover {
+    background: var(--bg-blur-color-light) !important;
+    border: 1px var(--bg-blur-color-light) !important;
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.2) !important;
+    outline: none !important;
+  }
+  
+  /* Focus States */
   .contact-form-input:focus,
   .contact-form-input.is-select:focus,
   textarea.contact-form-input:focus {
