@@ -166,6 +166,9 @@
       grid-template-rows: repeat(2, auto) !important; /* 2 Rows, auto height */
       gap: 32px !important; /* Optional: Adds spacing between rows */
   }
+  .image-wrapper.is-help-card {
+      max-width: 400px !important; /* Optional: Limits image width */
+  }
 }  
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
