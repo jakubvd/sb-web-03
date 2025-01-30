@@ -164,10 +164,10 @@
       display: grid !important; /* Enables Grid Layout */
       grid-template-columns: 1fr !important; /* 1 Column */
       grid-template-rows: repeat(2, auto) !important; /* 2 Rows, auto height */
-      gap: 32px !important; /* Optional: Adds spacing between rows */
+      gap: 8px !important; /* Optional: Adds spacing between rows */
   }
   .image-wrapper.is-help-card {
-      max-width: 400px !important; /* Optional: Limits image width */
+      max-width: 300px !important; /* Optional: Limits image width */
   }
 }  
 
