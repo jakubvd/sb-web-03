@@ -87,7 +87,7 @@
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     outline: none !important;
     vertical-align: middle !important;
-    display: block !important;
+    display: inline-flex !important;
   }
 
   /* Dropdown Placeholder */
