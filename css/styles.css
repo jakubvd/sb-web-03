@@ -1,4 +1,4 @@
-  /* Global Font Smoothing */
+    /* Global Font Smoothing */
   * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -6,7 +6,7 @@
 
   @media screen and (max-width: 991px) {
     * {
-      -webkit-tap-highlight-color: transparent;
+        -webkit-tap-highlight-color: transparent;
     }
   }
 
@@ -60,15 +60,9 @@
   }
 
   @keyframes border-shine {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 
   /* Input and Dropdown Styling */
@@ -84,10 +78,9 @@
     letter-spacing: 0 !important;
     padding: 0.75rem 1rem !important;
     border-radius: var(--corner-img) !important;
-    transition: all 0.5s ease-in-out !important; 
+    transition: all 0.5s ease-in-out !important;
     outline: none !important;
-    vertical-align: middle !important;
-    display: inline-flex !important;
+    display: inline-flex !important; /* Removed vertical-align */
   }
 
   /* Dropdown Placeholder */
@@ -119,8 +112,7 @@
     box-shadow: 0 0 0 1px rgba(250, 250, 250, 0.5) !important;
     outline: none !important;
   }
-  
-  /* Focus States */
+
   .contact-form-input:focus,
   .contact-form-input.is-select:focus,
   textarea.contact-form-input:focus {
@@ -157,12 +149,12 @@
     background-image: url("https://cdn.prod.website-files.com/679001e2c7eebd9178f3e176/679670bf08ff0a9f002cde98_IcBaselineKeyboardArrowDown.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%; /* Adjust for proper icon size */
-    border: 1px solid var(--bg-blur-color) !importantimportant;
+    background-size: 80%;
+    border: 1px solid var(--bg-blur-color) !important; /* Fixed !important */
   }
 
   input[type="checkbox"].form_checkbox-icon-style:hover {
-    border-color: solid var(--bg-blur-color) !important;
+    border-color: var(--bg-blur-color) !important; /* Fixed */
     box-shadow: 0 0 0 1px rgba(250, 250, 250, 0.5) !important;
   }
 
@@ -222,4 +214,3 @@
       letter-spacing: 0px;
     }
   }
-</style>
