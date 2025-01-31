@@ -176,8 +176,8 @@
   .variable-basis span {
     display: block;
     text-align: center;
+  }
 }
-
 @media screen and (max-width: 599px) and (min-width: 479px) {
   .help_card {
       display: grid !important; /* Enables Grid Layout */
@@ -204,6 +204,7 @@
   .variable-basis span {
     display: block !important;
     text-align: center !important;
+  }
 } 
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
