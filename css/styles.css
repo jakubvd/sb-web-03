@@ -209,6 +209,7 @@
       line-height: 1;
       font-weight: 400;
       letter-spacing: 0px;
+      text-align: center;
     }
     .variable-basis span {
       display: inline-block;
