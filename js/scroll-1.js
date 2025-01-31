@@ -1,29 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Ensure GSAP and ScrollToPlugin are loaded
     if (typeof gsap === "undefined" || typeof ScrollToPlugin === "undefined") {
-        console.error("GSAP or ScrollToPlugin is not loaded. Ensure gsap.min.js and ScrollToPlugin.min.js are included.");
+        console.error("GSAP or ScrollToPlugin is not loaded.");
         return;
     }
-    
-    // Select button and target section
-    const button = document.querySelector("#button-hero");
-    const targetSection = document.querySelector("#contact-scroll-to-wrap");
-    
-    if (!button || !targetSection) {
-        console.error("Required elements not found: #button-hero or #contact-scroll-to-wrap");
+
+    gsap.registerPlugin(ScrollToPlugin);
+
+    // Get button and target section
+    const buttonHero = document.getElementById("button-hero");
+    const targetSection = document.getElementById("contact-scroll-to-wrap");
+
+    if (!buttonHero || !targetSection) {
+        console.error("Button or target section not found.");
         return;
     }
-    
-    button.addEventListener("click", function () {
-        // Check screen width to determine offset
-        let offset = window.innerWidth >= 992 ? 100 : 64;
-        
+
+    // Function to scroll to the target with correct offset
+    function scrollToContact() {
+        let offsetTop = window.innerWidth >= 992 ? 80 : 60; // 100px for 992px+, 64px for 991px-
+        let duration = window.innerWidth >= 992 ? 1.5 : 1; // 1.5s for 992px+, 1s for 991px-
+
         gsap.to(window, {
-            duration: 1.2,  // Adjust scroll duration
-            ease: "power2.out",  // Smooth easing
+            duration: duration,
             scrollTo: {
-                y: "#contact-scroll-to-wrap",
-                offsetY: offset,
-            }
+                y: targetSection,
+                offsetY: offsetTop,
+            },
+            ease: "power4.out",
         });
-    });
+    }
+
+    // Add click event to button
+    buttonHero.addEventListener("click", scrollToContact);
 });
