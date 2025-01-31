@@ -214,13 +214,6 @@
       left: 50%;
       transform: translateX(-50%);
     }
-    .variable-basis {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap; /* Allow wrapping */
-      text-align: center;
-    }
   }
 
   @media screen and (max-width: 991px) and (min-width: 768px) {
