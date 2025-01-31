@@ -198,7 +198,18 @@
     left: 50%;
     transform: translateX(-50%);
   }
-}  
+  .variable-basis {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important; /* Ensures words don't get cut */
+  }
+  .variable-basis span {
+    display: flex !important; /* Make sure text is displayed correctly */
+    flex-wrap: wrap !important;
+    text-align: center !important;
+  }
+} 
 
 @media screen and (max-width: 767px) and (min-width: 600px) {
     .variable-words-wrap {
@@ -219,7 +230,8 @@
       align-items: center;
       justify-content: center;
       flex-wrap: wrap; /* Allow wrapping */
-  }
+      text-align: center;
+    }
   }
 
   @media screen and (max-width: 991px) and (min-width: 768px) {
