@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to scroll to the target with correct offset
     function scrollToContact() {
-        let offsetTop = window.innerWidth >= 992 ? 68 : 44; // 100px for 992px+, 64px for 991px-
-        let duration = window.innerWidth >= 992 ? 1.5 : 1.5; // 1.5s for 992px+, 2s for 991px-
+        let offsetTop = window.innerWidth >= 992 ? 68 : 0; // 68px for 992px+, 0px for 991px-
+        let duration = window.innerWidth >= 992 ? 1.5 : 1.2; // 1.5s for 992px+, 1.2s for 991px-
 
         gsap.to(window, {
             duration: duration,
