@@ -210,7 +210,7 @@
       text-align: center;
     }
     .variable-basis span {
-      display: inline-block;
+      display: block;
       text-align: center;
     }
   }
