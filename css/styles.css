@@ -201,8 +201,9 @@
       width: 400px;
       height: 48px;
       text-align: center;
-      margin: 0 auto;
-    }
+      margin-right: auto;
+      margin-left: auto;
+    } 
     .variable-word {
       font-size: 48px;
       line-height: 1;
@@ -213,7 +214,6 @@
       display: inline-block;
       width: 100%;
       text-align: center;
-      margin: 0 auto;
     }
   }
 
