@@ -149,7 +149,7 @@
     background-image: url("https://cdn.prod.website-files.com/679001e2c7eebd9178f3e176/679670bf08ff0a9f002cde98_IcBaselineKeyboardArrowDown.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 80%;
+    background-size: 100%;
     border: 0.5px solid var(--blue-outline) !important; /* Fixed !important */
   }
 
