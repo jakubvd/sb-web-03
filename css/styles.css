@@ -200,9 +200,6 @@
     .variable-words-wrap {
       width: 400px;
       height: 48px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       text-align: center;
     } 
     .variable-word {
@@ -214,9 +211,7 @@
     }
     .variable-basis span {
       display: inline-block;
-      width: 100%;
       text-align: center;
-      margin: 0 auto;
     }
   }
 
