@@ -26,7 +26,7 @@
     font-size: 80px;
     line-height: 1;
     font-weight: 400;
-    letter-spacing: 0%;
+    letter-spacing: 0px;
   }
 
   .variable-basis {
@@ -75,7 +75,7 @@
     font-size: 1rem !important;
     font-weight: 600 !important;
     line-height: 1.5 !important;
-    letter-spacing: 0 !important;
+    letter-spacing: 0px !important;
     padding: 0.75rem 1rem !important;
     border-radius: var(--corner-img) !important;
     transition: all 0.5s ease-in-out !important;
@@ -161,17 +161,15 @@
 /* Media Queries */
 @media screen and (max-width: 478px) {
   .variable-words-wrap {
-    width: 400px;
-    height: 36px;
-    text-align: center;
+    width: 400px !important;
+    height: 36px !important;
+    text-align: center !important;
   }
   .variable-word {
-    font-size: 36px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 36px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
   }
 }
 
@@ -209,6 +207,12 @@
       line-height: 1;
       font-weight: 400;
       letter-spacing: 0px;
+    }
+    .variable-basis span {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
     }
   }
 
