@@ -203,6 +203,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
     } 
     .variable-word {
       font-size: 48px;
