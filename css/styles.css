@@ -186,28 +186,17 @@
       max-width: 300px !important; /* Optional: Limits image width */
   }
   .variable-words-wrap {
-    width: 400px;
-    height: 48px;
-    text-align: center;
+    width: 400px !important;
+    height: 48px !important;
+    text-align: center !important;
   }
   .variable-word {
-    font-size: 48px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .variable-basis {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-wrap: wrap !important; /* Ensures words don't get cut */
-  }
-  .variable-basis span {
-    display: flex !important; /* Make sure text is displayed correctly */
-    flex-wrap: wrap !important;
-    text-align: center !important;
+    font-size: 48px !important;
+    line-height: 1 !important;
+    font-weight: 400 !important;
+    letter-spacing: 0px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
 } 
 
