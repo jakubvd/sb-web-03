@@ -161,7 +161,7 @@
 /* Media Queries */
 @media screen and (max-width: 478px) {
   .variable-words-wrap {
-    width: 320px;
+    width: 360px;
     height: 36px;
     text-align: center;
   }
