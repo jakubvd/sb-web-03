@@ -44,11 +44,11 @@
   /* Gradient Button Styling */
   .button-wrapper-gradient {
     display: inline-block;
-    padding: 2.5px;
+    padding: 1px;
     background: linear-gradient(45deg, #c5d7f5, #d6e5f9, #e7f3fc, #b4c6eb, #8f9fe3, #6d87c9, #4a66b0);
     background-size: 200% 200%;
     border-radius: 50px;
-    transition: background 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
